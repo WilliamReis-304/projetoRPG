@@ -1,29 +1,25 @@
 from Especies import *
 
-persona = Especies(0,0,0,0,0,0,0,0)
-
-def criar_guerreiro():
-    persona.forca = persona.forca + 3
-    persona.defesa = persona.defesa + 2
-    persona.agilidade = persona.agilidade - 1
-    persona.magia = persona.magia - 1
+def criar_guerreiro(a):
+    a.forca += 2
+    a.defesa += 1
+    a.agilidade -= 1
+    a.magia -= 1
     # maestria = True
     
-def criar_ladino():
-    persona.agilidade = persona.agilidade + 2
-    persona.destreza = persona.destreza + 3
-    persona.magia = persona.magia + 1
+def criar_ladino(a):
+    a.agilidade += 2
+    a.destreza += 3
     # furtividade = True
     
-def criar_mago():
-    persona.forca = persona.forca - 1
-    persona.inteligencia = persona.inteligencia + 1
-    persona.magia = persona.magia + 3
+def criar_mago(a):
+    a.forca -= 1
+    a.inteligencia += 2
+    a.magia += 3
     # magia_inicial = True
     
-def criar_paladino():
-    persona.forca = persona.forca + 2
-    persona.defesa = persona.defesa + 3
-    persona.magia = persona.magia + 2
-    persona.inteligencia = persona.inteligencia +1
+def criar_paladino(a):
+    a.forca += 2
+    a.defesa += 3
+    a.magia += 2
     # reza = True
