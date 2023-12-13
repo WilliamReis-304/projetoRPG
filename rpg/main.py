@@ -20,11 +20,12 @@ while True:
     if not escolha in opcoes:
         print("Escolha uma opção válida!\n")
     elif escolha == "5":
-        print("Volte sempre!\n")
-        break
+        print("\nVolte sempre!\n")
+        exit()
     else:
         persona = raca[escolha][0]
         print(persona.__dict__)
+        print(f"\nCerto, voce será da raça {raca[escolha][1]}.\n")
         break
 
 profissao = {
@@ -34,7 +35,6 @@ profissao = {
     "4" : [criar_paladino(persona),"Paladino"]
 }
 
-print(f"\nCerto, voce será da raça {raca[escolha][1]}.\n")
 print("Agora escolha sua classe:\n")
 
 while True:
@@ -43,11 +43,11 @@ while True:
     if not escolha in opcoes:
         print("Escolha uma opção válida!\n")
     elif escolha == "5":
-        print("Volte sempre!\n")
-        break
+        print("\nVolte sempre!\n")
+        exit()
     else:
         profissao[escolha][0]
         print(persona.__dict__)
+        print(f"\nCerto, voce será da classe {profissao[escolha][1]}.\n")
         break
     
-print(f"\nCerto, voce será da classe {profissao[escolha][1]}.\n")
