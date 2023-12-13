@@ -3,6 +3,7 @@ from Especies import *
 from detalhes import *
 
 print("Bem vindo(a)! Selecione a raça de seu personagem:\n")
+detalhe_raca()
 
 
 raca = {
@@ -15,7 +16,6 @@ raca = {
 opcoes = ("1","2","3","4","5")
 
 while True:
-    detalhe_raca()
     escolha = input("(1) Humano\n(2) Elfo\n(3) Anão\n(4) Ciclope\n(5) Sair\n\n")
     if not escolha in opcoes:
         print("Escolha uma opção válida!\n")
@@ -50,4 +50,6 @@ while True:
         print(persona.__dict__)
         print(f"\nCerto, voce será da classe {profissao[escolha][1]}.\n")
         break
-    
+
+while True:
+    print("Agora diga o nome de seu personagem:\n")
